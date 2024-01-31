@@ -1,0 +1,42 @@
+### CATEGORY ENDPOINTS
+POST http://localhost:8080/category HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "name": "Category 30",
+    "description": "Only testing description"
+}
+
+### GET CATEGORY BY ID
+GET http://localhost:8080/category/c873a640-5d2c-4eab-a856-894848a90587 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+### GET CATEGORIES
+GET http://localhost:8080/category
+Host: localhost:8080
+Content-Type: application/json
+
+### PRODUCT ENDPOINTS
+POST http://localhost:8080/product HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "description": "Only testing product",
+    "price": 45,
+    "image_url": "http://www.google.com",
+    "category_id": "c873a640-5d2c-4eab-a856-894848a90587"  
+}
+
+### GET PRODUCTS
+GET http://localhost:8080/product HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+### GET PRODUCT BY ID
+GET http://localhost:8080/product/e4b3fe83-5cc7-4aaf-8f31-16bfb3912e07 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
